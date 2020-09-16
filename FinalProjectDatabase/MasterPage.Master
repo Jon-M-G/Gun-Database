@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="FinalProjectDatabase.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Classic Models</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="design.css">
+                
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <header>
+                    <h1>The Gun Index</h1>
+                </header>
+                <nav>
+                    <a href="default.aspx" id = "navbar">Home Page</a>
+                    <a href="SearchPage.aspx" id = "navbar">Search</a>
+                    <a href="InsertPage.aspx" id = "navbar">Insert Gun Form</a>
+                   
+                </nav>
+            <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+    <footer>
+                2019 EKU CSC 313, 12/2/2019<br>
+                <a>Final Project, Jonathon Gower</a>
+        </footer>
+    <asp:ContentPlaceHolder ID ="footer" runat ="server">
+    </asp:ContentPlaceHolder>
+</html>
